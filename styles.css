@@ -1,0 +1,52 @@
+:root {
+    --page: #e5e5e5;
+    --ink: #090909;
+    --muted: #909090;
+    --field-disabled: #b7b7b7;
+    --selected: #d7d7d7;
+    --line: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+}
+
+* {
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100%;
+    margin: 0;
+}
+body{
+    background: var(--page);
+}
+button, input {
+    font: inherit;
+}
+.hackclub-flag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: clamp(112px, 13.5vw, 220px);
+    height: auto;
+    z-index: 2;
+}
+
+.sidebar{
+    border-right: 1px solid var(--line);
+    padding: clamp(80px, 9.1vw, 148px) 20px 0 clamp(22px, 2vw, 34px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.nav-link{
+    display: block;
+    color: #080808;
+    font-size: clamp(21px, 2.5vw, 42px);
+    line-height: 1.25; 
+    text-decoration: none;
+    white-space: nowrap;
+}
+.nav-link.muted{
+    color: #626262;
+    font-size: clamp(17px, 1.8vw, 29px);
+}
