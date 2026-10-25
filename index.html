@@ -8,14 +8,48 @@
 </head>
 <body>
     <img src="assets/HackclubFlag.png" alt="HackClub" class="hackclub-flag"/>
-    <div>
+    <div class="app=shell">
         <aside class="sidebar" aria-label="Main navigation">
             <a class="nav-link active" href="#home" aria-current="page">Home</a>
         
             <span class="nav-link muted" aria-disabled="true">More Soon</span>
         </aside>
 
+        <main class="main-content" id="home">
+            <header class="page-heading">
+                <img src="assets/Reader’s Journal Title.svg" alt="Reader's Journal" class="journal-title" />
+            </header>
+            
+            <div class="workspace">
+                <section class="records-panel" aria-labelledby="books-heading">
+                    <div class="records-haeding">
+                        <h1 id="books-heading">Book's Read</h1>
+                        <div class="record-actions">
+                            <button id="add-button" class="image-button" type="button" aria-label="Add a book">
+                                <img src="assets/addButton.svg" alt="Add Button" />
+                            </button>
+                            <button id="delete-button" class="image-button" type="button" aria-label="Delete a selected book"><img src="assets/deleteButton.svg" alt="delete-button" /></button>
+                        </div>
+                    </div>
+                    <p class="empty-message" id="empty-message">*No books in Record</p>
+                    <div class="table-wrap">
+                        <table id="books-table" aria-label="Books read" hidden>
+                            
+                        </table>
+                    </div>
+                    <p id="selection-hint" class="selection-hint" hidden>Click a book to select it</p>
+                </section>
+                
+            </div>
+        </main>
 
     </div>
+
+    <aside class="sticker-rail" aria-label="Reader Sticker">
+        <img src="assets/Sticker1.png" alt="A reader relaxing with a book" />
+        <img src="assets/Sticker2.png" alt="A reader floating on an orange book" />
+        <img src="assets/Sticker3.png" alt="A reader curled up in an armchair" />
+
+    </aside>
 </body>
 </html>

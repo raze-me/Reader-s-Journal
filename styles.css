@@ -50,3 +50,102 @@ button, input {
     color: #626262;
     font-size: clamp(17px, 1.8vw, 29px);
 }
+
+.main-content{
+    min-width:0;
+    padding: 0 clamp(24px, 2.45vw, 40px);
+}
+
+.page-heading{
+    height: 0 clamp(155px, 11.2vw, 182px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.journal-title{
+    width: min(100%, 720);
+    max-height: 175px;
+    object-fit: contain;
+}
+.workspace{
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    align-items: start;
+    min-height: 390px;
+}
+
+.record-panel{
+    min-width: 0;
+    padding: 0 clamp(12px, 1.3vw, 22px) 0 0;
+}
+
+.records-heading{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 26px;
+    white-space: nowrap;
+}
+
+.record-heading h1{
+    font-size: clamp(19px, 1.75vw, 29px);
+    font-weight: 400;
+}
+
+.record-actions{
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.image-button {
+    display: inline-flex;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.image-button img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+#add-button {
+    width: clamp(61px, 5vw, 82px);
+}
+#delete-button{
+    width: clamp(64px, 5.vw, 88px);
+}
+
+.image-button:focus-visible, .info-button:focus-visible{ outline: 2px solid #4972a6;}
+
+.empty-message{
+    color:var(--muted);
+    font-size: clamp(14px, 1.3vw, 21px);
+    margin: 0 0 18px;
+}
+.table-wrap{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.selection-hint {
+    color: #888;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+.sticker-rail{
+    border-left: 1px solid var(--line);
+    padding: 4px clamp(15px, 1.7vw, 28px) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
