@@ -8,7 +8,7 @@
 </head>
 <body>
     <img src="assets/HackclubFlag.png" alt="HackClub" class="hackclub-flag"/>
-    <div class="app=shell">
+    <div class="app-shell">
         <aside class="sidebar" aria-label="Main navigation">
             <a class="nav-link active" href="#home" aria-current="page">Home</a>
         
@@ -22,7 +22,7 @@
             
             <div class="workspace">
                 <section class="records-panel" aria-labelledby="books-heading">
-                    <div class="records-haeding">
+                    <div class="records-heading">
                         <h1 id="books-heading">Book's Read</h1>
                         <div class="record-actions">
                             <button id="add-button" class="image-button" type="button" aria-label="Add a book">
@@ -34,6 +34,14 @@
                     <p class="empty-message" id="empty-message">*No books in Record</p>
                     <div class="table-wrap">
                         <table id="books-table" aria-label="Books read" hidden>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody id="books-list"></tbody>
                             
                         </table>
                     </div>
@@ -43,7 +51,7 @@
                 <section class="entry-panel" aria-label="Books details form">
                     <form id="book-form" autocomplete="off">
                         <label for="book-title" class="visually-hidden">Book title</label>
-                        <input type="text" id="book-title" name="title" class="field title-field" placeholder="=Title" required disabled maxlength="160" />
+                        <input type="text" id="book-title" name="title" class="field title-field" placeholder="Title" required disabled maxlength="160" />
                         <label class="visually-hidden" for="book-volume">Volume</label>
                         <input id="book-volume" name="volume" class="field volume-field" type="text" placeholder="Volume" disabled maxlength="80" />
                         <label class="visually-hidden" for="book-author">Author</label>
@@ -51,26 +59,32 @@
 
                         <div class="chapter-line">
                             <label for="book-chapters" class="visually-hidden">Chapters Completed</label>
-                            <input id="book-author" name="author"  type="number" min="1" step="1" class="field chapters-field" placeholder="chapters-completed" disabled/>
+                            <input id="book-chapters" name="chapters"  type="number" min="1" step="1" class="field chapters-field" placeholder="chapters-completed" disabled/>
                             <span class="info-wrap">
                                 <button class="info-button" type="button" aria-label="Information about the chapters completed" aria-describedby="chapter-tooltip"><img src="assets/infoButton.svg" alt="info" /></button>
                                 <span class="tooltip" id="chapter-tooltip" role="tooltip">Leave this blank if finished the whole book. A blank chapter count is saved as fully completed.</span>
                             </span>
                         </div>
-
                         
+                        <div class="submit-row"><button class="image-button submit-button" type="submit" aria-label="Submit book" id="submit-button" disabled><img src="assets/submitButton.svg" alt="Submit"></button></div>
+
+                        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
                     </form>
                 </section>
             </div>
         </main>
 
+
+
+        
+        <aside class="sticker-rail" aria-label="Reader Sticker">
+            <img src="assets/Sticker1.png" alt="A reader relaxing with a book" />
+            <img src="assets/Sticker2.png" alt="A reader floating on an orange book" />
+            <img src="assets/Sticker3.png" alt="A reader curled up in an armchair" />
+            
+        </aside>
     </div>
-
-    <aside class="sticker-rail" aria-label="Reader Sticker">
-        <img src="assets/Sticker1.png" alt="A reader relaxing with a book" />
-        <img src="assets/Sticker2.png" alt="A reader floating on an orange book" />
-        <img src="assets/Sticker3.png" alt="A reader curled up in an armchair" />
-
-    </aside>
+    <script src="app.js"></script>
 </body>
 </html>
