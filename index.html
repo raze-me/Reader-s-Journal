@@ -40,6 +40,27 @@
                     <p id="selection-hint" class="selection-hint" hidden>Click a book to select it</p>
                 </section>
                 
+                <section class="entry-panel" aria-label="Books details form">
+                    <form id="book-form" autocomplete="off">
+                        <label for="book-title" class="visually-hidden">Book title</label>
+                        <input type="text" id="book-title" name="title" class="field title-field" placeholder="=Title" required disabled maxlength="160" />
+                        <label class="visually-hidden" for="book-volume">Volume</label>
+                        <input id="book-volume" name="volume" class="field volume-field" type="text" placeholder="Volume" disabled maxlength="80" />
+                        <label class="visually-hidden" for="book-author">Author</label>
+                        <input id="book-author" name="author" class="field author-field" type="text" placeholder="Author" disabled maxlength="120" />
+
+                        <div class="chapter-line">
+                            <label for="book-chapters" class="visually-hidden">Chapters Completed</label>
+                            <input id="book-author" name="author"  type="number" min="1" step="1" class="field chapters-field" placeholder="chapters-completed" disabled/>
+                            <span class="info-wrap">
+                                <button class="info-button" type="button" aria-label="Information about the chapters completed" aria-describedby="chapter-tooltip"><img src="assets/infoButton.svg" alt="info" /></button>
+                                <span class="tooltip" id="chapter-tooltip" role="tooltip">Leave this blank if finished the whole book. A blank chapter count is saved as fully completed.</span>
+                            </span>
+                        </div>
+
+                        
+                    </form>
+                </section>
             </div>
         </main>
 
