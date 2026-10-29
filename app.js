@@ -13,6 +13,8 @@
     const booksList = document.getElementById('books-list');
     const selectionHint = document.getElementById('selection-hint');
     const formMessage = document.getElementById('form-message');
+    
+    
     let books = readBooks();
     let formEnabled = false;
     let selectedId = null;
@@ -60,6 +62,8 @@
             month: 'short', day: '2-digit'
         }).format(date).replace(' ', ',');
     }
+
+    
 
     function renderBooks(){
         booksList.replaceChildren();
@@ -173,6 +177,15 @@
             renderBooks();
         }
     });
+
+    const spookyToggle = document.getElementById('spooky-toggle');
+
+    spookyToggle.addEventListener('click', () =>{
+        const enabled = document.body.classList.toggle('spooky-mode');
+        spookyToggle.setAttribute('aria-pressed', String(enabled));
+        spookyToggle.textContent =  enabled? 'Its Haloweeeee!': 'Turn On Spooky Vibes';
+    });
+
     renderBooks();
 
     

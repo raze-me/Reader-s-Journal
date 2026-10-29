@@ -2,13 +2,16 @@
 
 # Reader's Journal
 
+There are days when you take a book and read till 3am at night but after that day you never pick it up.
+So here is Reader's Journal, just keep a record of it and note all completed chapters. So that when you are up another night again and dont know what to do so you can come and check here at Reader's Journal to complete those books.
+
 A simple web app to save keep a record of your read books, either to flaut or just for you.
 Like a books journal. Completely private.
 
-- [Live Link](https://raze-me.github.io/Reader-s-Journal)
+- [Live Link](https://raze-me.github.io/Reader-s-Journal): Try it out NOW!
 
 <div align="center">
-    <img src="assets/Screenshot 2026-10-29 001734.png" alt="Reader's Journal Dashboard">
+    <img src="assets/Screenshot 2026-10-30 004552.png" alt="Reader's Journal Dashboard" width=500px>
 </div>
 
 
@@ -26,6 +29,7 @@ Like a books journal. Completely private.
 - **HTML**
 - **CSS**
 - **Vanilla JS**
+- **Stciker Assets**: from Hackclub [stickers](https://stickers.hackclub.com/catalog)
 
 ## Project Structure
 
@@ -62,6 +66,8 @@ cd readers-journal
 ## Contribution
 
 I welcome all possible contributions to this small project of mine as its something Reader's can really use to keep a record of their reading journey. :>
+
+If you are a fellow reader so please suggest improvements Please. Thanks!
 
 
 ## Author
